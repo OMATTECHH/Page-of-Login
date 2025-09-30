@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* alinhando tudo ao centro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* dando altura minima em vh */
+    min-height: 100dvh;
+
+    background: url(../Img/a-chosen-soul--yhz-MAxKco-unsplash.jpg);
+
+    /* image ocupa tudo sem perder nada */
+    background-size: cover;
+
+    /* foco no centro */
+    background-position: center;
+}
+
+html {
+    /* font = 10px */
+    font-size: 62.5%;
+}
+
+.formulario {
+    /* tirando a borda padrao do form */
+    border: none;
+}
+
+/* fildset */
+.container {
+    border: 0;
+
+    /* 420px */
+    width: 42rem;
+    padding: 3rem 4rem;
+
+    /* fundo transparente */
+    background-color: transparent;
+
+    /* fundo desfocado */
+    backdrop-filter: blur(0.6rem);
+
+    border-radius: 3rem;
+    border: 2px solid rgb(255, 255, 255, .2);
+
+    color: #fff;
+    box-shadow: inset 0 0 6px 6px rgb(0, 0, 0, .5);
+}
+
+.container h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.input_box {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    margin: 3rem 0;
+}
+
+.input_box input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    border: 2px solid rgba(161, 158, 158, 0.5);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 2rem 4rem 2rem 2rem;
+    border-radius: 4rem;
+}
+
+.input_box input::placeholder {
+    color: rgba(196, 193, 193, 0.733);
+}
+
+.input_box i {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.remember_forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember_forgot label input {
+    accent-color: unset;
+    margin-right: .5rem;
+}
+
+.remember_forgot input[type="checkbox"] {
+    position: relative;
+    left: 10px;
+    top: 7px;
+    appearance: none;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(196, 193, 193, 0.733);
+    border-radius: 4px;
+    /* quadradinho */
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.remember_forgot input[type="checkbox"]:checked {
+    background-color: rgba(255, 255, 255, 0.2); /* opcional */
+}
+
+.remember_forgot input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.remember_forgot a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.remember_forgot a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 2rem;
+}
+
+.login:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    border: 2px solid rgba(196, 193, 193, 0.733);
+    color: #fff;
+    transition-property: background;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+}
+
+.register_link {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem;
+}
+
+.register_link a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.register_link a:hover {
+    text-decoration: underline;
+}

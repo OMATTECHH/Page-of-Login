@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+        <meta property="og:title" content="Projeto Login">
+        <meta property="og:description"content="Página com layout simples de login">
+        <meta name="description" content="Projeto de layout de login">
+        <meta name="author" content="Mateus Monteiro Ramos">
+        <meta name="keyword"content="html, css, login, estrutura, simples, minimalista">
+
+        <title>Login</title>
+    </head>
+
+    <body>
+        <form class="formulario">
+            <fieldset class="container">
+                <h1>Login</h1>
+
+                <section class="input_box">
+                    <input 
+                    type="email"
+                    placeholder="User">
+                    <i class="bx bxs-user"></i>
+                </section>
+
+                <section class="input_box">
+                    <input 
+                    type="password"
+                    required
+                    placeholder="Password">
+                    <i class="bx bxs-lock-alt"></i>
+                </section>
+
+                <section class="remember_forgot">
+                    <label>
+                        Remember my password
+                        <input type="checkbox">
+                    </label>
+                    <a href="#">Forgot Passoword</a>
+                </section>
+
+                <input type="submit" value="Login" class="login">
+
+                <section class="register_link">
+                    <p>
+                        Don´t have a account ? <a href="#">Sign</a>
+                    </p>
+                </section>
+            </fieldset>
+        </form>
+    </body>
+</html>
