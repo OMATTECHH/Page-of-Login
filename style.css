@@ -119,7 +119,8 @@ html {
 }
 
 .remember_forgot input[type="checkbox"]:checked {
-    background-color: rgba(255, 255, 255, 0.2); /* opcional */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* opcional */
 }
 
 .remember_forgot input[type="checkbox"]:checked::after {
@@ -180,4 +181,63 @@ html {
 
 .register_link a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .container h1 {
+        font-size: 2.4rem;
+    }
+
+    .input_box {
+        margin: 2rem 0;
+        height: auto;
+    }
+
+    .input_box input {
+        font-size: 1.4rem;
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+    }
+
+    .input_box i {
+        font-size: 1.6rem;
+        right: 1.5rem;
+    }
+
+    .login {
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .register_link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .input_box input {
+        font-size: 1.2rem;
+    }
+
+    .login {
+        font-size: 1.2rem;
+    }
+
+    .register_link {
+        font-size: 0.9rem;
+    }
 }
