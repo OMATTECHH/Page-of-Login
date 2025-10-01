@@ -16,7 +16,7 @@ body {
     /* dando altura minima em vh */
     min-height: 100dvh;
 
-    background: url(../Img/a-chosen-soul--yhz-MAxKco-unsplash.jpg);
+    background: url(./Img/a-chosen-soul--yhz-MAxKco-unsplash.jpg);
 
     /* image ocupa tudo sem perder nada */
     background-size: cover;
